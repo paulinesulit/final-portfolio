@@ -1,6 +1,17 @@
-html {
-    font-size: 125%;
-    font-family: 'Open Sans', sans-serif;
-    color: #704B3E;
-    background-color: #FFFBFB;
+@import "partials/setup";
+@import "partials/variables";
+@import "partials/typography-general";
+
+/* header */
+
+header {
+    background-color: #FFF0ED;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #704B3E;
+    padding: 20px;
 }
