@@ -321,7 +321,7 @@ h3::before {
 a {
   font-weight: 300;
   text-decoration: none;
-  color: "Open Sans", sans-serif;
+  color: #704B3E;
 }
 a:hover {
   font-weight: 700;
@@ -358,9 +358,98 @@ ul {
   list-style-type: none;
 }
 
+.navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FFF0ED;
+}
+.navBar nav {
+  position: relative;
+}
+.navBar nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.navBar nav ul li {
+  padding: 0 10px;
+}
+.navBar nav i {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 1.5rem;
+  display: none;
+}
+.navBar .navLogo {
+  width: 90px;
+}
+
 /* header */
 header {
   background-color: #FFF0ED;
+}
+
+/* about section */
+.aboutContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.aboutContainer .resumeButton {
+  background-color: #704B3E;
+  color: #FFF0ED;
+  padding: 15px;
+  display: inline-block;
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+.aboutContainer .aboutImg {
+  width: 100%;
+  padding: 40px;
+}
+.aboutContainer .aboutImg img {
+  border-radius: 50%;
+}
+
+/* skills section */
+.skills,
+.contact {
+  background-color: #FFF0ED;
+}
+
+.skillsContainer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.skillsContainer ul li {
+  width: calc(100% / 5 - 10px);
+  text-align: center;
+}
+.skillsContainer ul li i {
+  font-size: 2rem;
+}
+.skillsContainer ul li p {
+  font-family: "Gochi Hand", cursive;
 }
 
 /* footer */

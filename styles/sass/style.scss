@@ -1,11 +1,60 @@
 @import "partials/setup";
 @import "partials/variables";
 @import "partials/typography-general";
+@import "partials/nav";
 
 /* header */
 
 header {
     background-color: #FFF0ED;
+}
+
+
+/* about section */
+
+.aboutContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .resumeButton {
+        background-color: #704B3E;
+        color: #FFF0ED;
+        padding: 15px;
+        display: inline-block;
+        font-size: 0.8rem;
+        margin-top: 10px;
+    }
+    .aboutImg {
+        width: 100%;
+        padding: 40px;
+        img {
+            border-radius: 50%;
+        }
+    }
+}
+
+
+/* skills section */
+
+.skills,
+.contact {
+    background-color: #FFF0ED;
+}
+
+.skillsContainer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    li {
+        width: calc(100% / 5 - 10px);
+        text-align: center;
+        i {
+            font-size: 2rem;
+        }
+        p {
+            font-family: 'Gochi Hand', cursive;
+        }
+    }
 }
 
 
