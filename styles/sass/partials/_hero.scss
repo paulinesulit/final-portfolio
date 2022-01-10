@@ -1,0 +1,15 @@
+// hero header
+
+.heroImage {
+    background-image: url('../assets/procreate.png');
+    background-size: 400px;
+    background-repeat: no-repeat;
+    height: 400px;
+    position: relative;
+    margin-top: 50px;
+    .heroText {
+        position: absolute;
+        left: 40%;
+        bottom: 50%;
+    }
+}

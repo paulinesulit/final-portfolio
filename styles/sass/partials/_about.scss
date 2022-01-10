@@ -1,0 +1,22 @@
+/* about section */
+
+.aboutContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .resumeButton {
+        background-color: $mainTextColor;
+        color: $secondaryBackground;
+        padding: 15px;
+        display: inline-block;
+        font-size: 0.8rem;
+        margin-top: 10px;
+    }
+    .aboutImg {
+        width: 100%;
+        padding: 40px;
+        img {
+            box-shadow: 30px 30px $mainTextColor;
+        }
+    }
+}

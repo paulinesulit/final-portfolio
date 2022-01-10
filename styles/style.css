@@ -291,12 +291,12 @@ html {
 h1 {
   font-family: "Gochi Hand", cursive;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 h2 {
   font-weight: 300;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 h3 {
@@ -358,6 +358,22 @@ ul {
   list-style-type: none;
 }
 
+header {
+  background-color: #FFF0ED;
+  height: 100%;
+}
+
+section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+/* footer */
+footer {
+  background-color: #704B3E;
+  padding: 20px;
+}
+
 .navBar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -392,9 +408,18 @@ ul {
   width: 90px;
 }
 
-/* header */
-header {
-  background-color: #FFF0ED;
+.heroImage {
+  background-image: url("../assets/procreate.png");
+  background-size: 400px;
+  background-repeat: no-repeat;
+  height: 400px;
+  position: relative;
+  margin-top: 50px;
+}
+.heroImage .heroText {
+  position: absolute;
+  left: 40%;
+  bottom: 50%;
 }
 
 /* about section */
@@ -422,10 +447,10 @@ header {
   padding: 40px;
 }
 .aboutContainer .aboutImg img {
-  border-radius: 50%;
+  -webkit-box-shadow: 30px 30px #704B3E;
+          box-shadow: 30px 30px #704B3E;
 }
 
-/* skills section */
 .skills,
 .contact {
   background-color: #FFF0ED;
@@ -450,10 +475,4 @@ header {
 }
 .skillsContainer ul li p {
   font-family: "Gochi Hand", cursive;
-}
-
-/* footer */
-footer {
-  background-color: #704B3E;
-  padding: 20px;
 }

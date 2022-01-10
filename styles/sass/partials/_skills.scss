@@ -1,0 +1,22 @@
+// skills section
+
+.skills,
+.contact {
+    background-color: $secondaryBackground;
+}
+
+.skillsContainer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    li {
+        width: calc(100% / 5 - 10px);
+        text-align: center;
+        i {
+            font-size: 2rem;
+        }
+        p {
+            font-family: 'Gochi Hand', cursive;
+        }
+    }
+}

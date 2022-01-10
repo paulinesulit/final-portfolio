@@ -8,12 +8,12 @@ html {
 h1 {
     font-family: $cursiveFont;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 h2 {
     font-weight: 300;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 h3 {
@@ -75,4 +75,23 @@ img {
 
 ul {
     list-style-type: none;
+}
+
+// header 
+header {
+    background-color: #FFF0ED;
+    height: 100%;
+}
+
+// sections
+section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+/* footer */
+
+footer {
+    background-color: #704B3E;
+    padding: 20px;
 }
