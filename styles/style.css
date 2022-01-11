@@ -359,9 +359,70 @@ ul {
   list-style-type: none;
 }
 
+.borderOne {
+  background-color: #FFF0ED;
+}
+.borderOne::after {
+  content: "";
+  display: inline-block;
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 50% 50%);
+          clip-path: polygon(100% 0, 100% 100%, 0 100%, 50% 50%);
+  background-color: #FFFBFB;
+  bottom: 0;
+}
+
+.borderTwo {
+  background-color: #FFF0ED;
+  position: relative;
+}
+.borderTwo::after {
+  content: "";
+  display: inline-block;
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  -webkit-clip-path: polygon(0 0, 100% 0, 40% 100%);
+          clip-path: polygon(0 0, 100% 0, 40% 100%);
+  background-color: #FFFBFB;
+}
+
+.borderThree {
+  background-color: #FFFBFB;
+  position: relative;
+}
+.borderThree::after {
+  content: "";
+  display: inline-block;
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%);
+  background-color: #FFF0ED;
+}
+
+.borderFour {
+  background-color: #FFF0ED;
+  position: relative;
+}
+.borderFour::after {
+  content: "";
+  display: inline-block;
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 77% 100%, 12% 42%, 0 60%);
+          clip-path: polygon(0 0, 100% 0, 100% 70%, 77% 100%, 12% 42%, 0 60%);
+  background-color: #FFFBFB;
+}
+
 header {
   background-color: #FFF0ED;
   height: 100%;
+  position: relative;
 }
 
 section {
@@ -373,6 +434,15 @@ section {
 footer {
   background-color: #704B3E;
   padding: 20px;
+}
+
+.navBarSticky {
+  position: fixed;
+  display: block;
+  top: 0;
+  width: 100%;
+  background-color: #FFF0ED;
+  z-index: 10;
 }
 
 .navBar {
@@ -408,18 +478,22 @@ footer {
 .navBar .navLogo {
   width: 90px;
 }
+.navBar .navLogo:hover {
+  -webkit-box-shadow: 0 2px #704B3E;
+          box-shadow: 0 2px #704B3E;
+}
 
 .heroImage {
   background-image: url("../assets/procreate.png");
-  background-size: 400px;
+  background-size: 600px;
   background-repeat: no-repeat;
-  height: 400px;
+  height: 600px;
   position: relative;
-  margin-top: 50px;
+  margin-top: 90px;
 }
 .heroImage .heroText {
   position: absolute;
-  left: 40%;
+  left: 50%;
   bottom: 50%;
 }
 
@@ -442,6 +516,10 @@ footer {
   display: inline-block;
   font-size: 0.8rem;
   margin-top: 10px;
+}
+.aboutContainer .resumeButton:hover {
+  background-color: rgba(239, 200, 190, 0.7);
+  color: #704B3E;
 }
 .aboutContainer .aboutImg {
   width: 100%;

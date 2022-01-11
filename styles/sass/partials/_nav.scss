@@ -1,3 +1,12 @@
+.navBarSticky {
+    position: fixed;
+    display: block;
+    top: 0;
+    width: 100%;
+    background-color: $secondaryBackground;
+    z-index: 10;
+}
+
 .navBar {
     display: flex;
     justify-content: space-between;
@@ -21,5 +30,8 @@
     }
     .navLogo {
         width: 90px;
+        &:hover {
+            box-shadow: 0 2px $mainTextColor;
+        }
     }
 }

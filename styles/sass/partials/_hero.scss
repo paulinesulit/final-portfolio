@@ -2,14 +2,14 @@
 
 .heroImage {
     background-image: url('../assets/procreate.png');
-    background-size: 400px;
+    background-size: 600px;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 600px;
     position: relative;
-    margin-top: 50px;
+    margin-top: 90px;
     .heroText {
         position: absolute;
-        left: 40%;
+        left: 50%;
         bottom: 50%;
     }
 }
