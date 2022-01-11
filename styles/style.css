@@ -359,6 +359,23 @@ ul {
   list-style-type: none;
 }
 
+header {
+  background-color: #FFF0ED;
+  height: 100%;
+  position: relative;
+}
+
+section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+/* footer */
+footer {
+  background-color: #704B3E;
+  padding: 20px;
+}
+
 .borderOne {
   background-color: #FFF0ED;
 }
@@ -417,23 +434,6 @@ ul {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 77% 100%, 12% 42%, 0 60%);
           clip-path: polygon(0 0, 100% 0, 100% 70%, 77% 100%, 12% 42%, 0 60%);
   background-color: #FFFBFB;
-}
-
-header {
-  background-color: #FFF0ED;
-  height: 100%;
-  position: relative;
-}
-
-section {
-  padding-top: 70px;
-  padding-bottom: 70px;
-}
-
-/* footer */
-footer {
-  background-color: #704B3E;
-  padding: 20px;
 }
 
 .navBarSticky {

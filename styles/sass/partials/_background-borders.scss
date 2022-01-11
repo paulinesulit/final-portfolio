@@ -1,0 +1,57 @@
+// borders
+
+.borderOne {
+    background-color: $secondaryBackground;
+    &::after {
+        content: '';
+        display: inline-block;
+        height: 50px;
+        width: 100%;
+        position: absolute;
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 50% 50%);
+        background-color: $mainBackground;
+        bottom: 0;
+    }
+}
+
+.borderTwo {
+    background-color: $secondaryBackground;
+    position: relative;
+    &::after {
+        content: '';
+        display: inline-block;
+        height: 50px;
+        width: 100%;
+        position: absolute;
+        clip-path: polygon(0 0, 100% 0, 40% 100%);
+        background-color: $mainBackground; 
+    }
+}
+
+.borderThree {
+    background-color: $mainBackground;
+    position: relative;
+    &::after {
+        content: '';
+        display: inline-block;
+        height: 50px;
+        width: 100%;
+        position: absolute;
+        clip-path: polygon(0 0, 100% 0, 100% 100%);
+        background-color: $secondaryBackground; 
+    }
+}
+
+.borderFour {
+    background-color: $secondaryBackground;
+    position: relative;
+    &::after {
+        content: '';
+        display: inline-block;
+        height: 100px;
+        width: 100%;
+        position: absolute;
+        clip-path: polygon(0 0, 100% 0, 100% 70%, 77% 100%, 12% 42%, 0 60%);
+        background-color: $mainBackground; 
+    }
+}
