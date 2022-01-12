@@ -285,7 +285,7 @@ html {
   font-size: 125%;
   font-family: "Open Sans", sans-serif;
   color: #704B3E;
-  background-color: #FFFBFB;
+  background-color: #FFF0ED;
 }
 
 h1 {
@@ -455,7 +455,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #FFF0ED;
 }
 .navBar nav {
   position: relative;
@@ -489,7 +488,7 @@ footer {
   background-repeat: no-repeat;
   height: 600px;
   position: relative;
-  margin-top: 90px;
+  margin-top: 180px;
 }
 .heroImage .heroText {
   position: absolute;
@@ -498,6 +497,10 @@ footer {
 }
 
 /* about section */
+.about, .portfolio {
+  background-color: #FFFBFB;
+}
+
 .aboutContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -528,11 +531,6 @@ footer {
 .aboutContainer .aboutImg img {
   -webkit-box-shadow: 30px 30px #704B3E;
           box-shadow: 30px 30px #704B3E;
-}
-
-.skills,
-.contact {
-  background-color: #FFF0ED;
 }
 
 .skillsContainer ul {

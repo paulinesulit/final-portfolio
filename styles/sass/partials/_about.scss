@@ -1,4 +1,7 @@
 /* about section */
+.about, .portfolio {
+    background-color: $mainBackground;
+}
 
 .aboutContainer {
     display: flex;
