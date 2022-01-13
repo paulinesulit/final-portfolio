@@ -2,7 +2,7 @@ html {
     font-size: 125%;
     font-family: $bodyFont;
     color: $mainTextColor;
-    background-color: $secondaryBackground;
+    background-color: $mainBackground;
 }
 
 h1 {
@@ -42,6 +42,7 @@ a {
     &:hover {
         background-color: $hoverBackground;
         padding: 0;
+        transition: background-color 0.3s ease;
     }
 }
 
@@ -80,7 +81,7 @@ ul {
 
 // header 
 header {
-    background-color: $secondaryBackground;
+    background-color: $mainBackground;
     height: 100%;
     position: relative;
 }

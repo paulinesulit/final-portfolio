@@ -326,6 +326,8 @@ a {
 a:hover {
   background-color: rgba(239, 200, 190, 0.7);
   padding: 0;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 p,
@@ -382,7 +384,7 @@ footer {
 .borderOne::after {
   content: "";
   display: inline-block;
-  height: 50px;
+  height: 70px;
   width: 100%;
   position: absolute;
   -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 50% 50%);
@@ -413,7 +415,7 @@ footer {
 .borderThree::after {
   content: "";
   display: inline-block;
-  height: 50px;
+  height: 70px;
   width: 100%;
   position: absolute;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%);
@@ -514,7 +516,7 @@ footer {
 }
 .aboutContainer .resumeButton {
   background-color: #704B3E;
-  color: #FFF0ED;
+  color: #FFFBFB;
   padding: 15px;
   display: inline-block;
   font-size: 0.8rem;
@@ -523,6 +525,8 @@ footer {
 .aboutContainer .resumeButton:hover {
   background-color: rgba(239, 200, 190, 0.7);
   color: #704B3E;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 .aboutContainer .aboutImg {
   width: 100%;

@@ -1,6 +1,6 @@
 /* about section */
 .about, .portfolio {
-    background-color: $mainBackground;
+    background-color: $secondaryBackground;
 }
 
 .aboutContainer {
@@ -17,6 +17,7 @@
         &:hover {
             background-color: $hoverBackground;
             color: $mainTextColor;
+            transition: background-color 0.3s ease;
         }
     }
     .aboutImg {
