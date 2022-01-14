@@ -443,7 +443,7 @@ footer {
   display: block;
   top: 0;
   width: 100%;
-  background-color: #FFF0ED;
+  background-color: #704B3E;
   z-index: 10;
 }
 
@@ -451,12 +451,9 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .navBar nav {
   position: relative;
@@ -467,21 +464,17 @@ footer {
   display: flex;
 }
 .navBar nav ul a {
-  padding: 10px 10px;
+  padding: 10px 40px;
+  color: #FFFBFB;
 }
 .navBar nav i {
   position: absolute;
   right: 0;
-  top: 0;
+  top: 10px;
   font-size: 1.5rem;
   display: none;
-}
-.navBar .navLogo {
-  width: 90px;
-}
-.navBar .navLogo:hover {
-  -webkit-box-shadow: 0 2px #704B3E;
-          box-shadow: 0 2px #704B3E;
+  padding: 10px;
+  background-color: #FFFBFB;
 }
 
 .heroImage {
@@ -557,4 +550,37 @@ footer {
 }
 .skillsContainer ul li p {
   font-family: "Gochi Hand", cursive;
+}
+
+@media (max-width: 600px) {
+  .navBarSticky {
+    background-color: rgba(112, 75, 62, 0.9);
+  }
+
+  .navBar nav {
+    width: 100%;
+    text-align: center;
+  }
+  .navBar nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+    margin-top: 60px;
+    display: none;
+  }
+  .navBar nav ul li {
+    padding: 20px;
+  }
+  .navBar nav ul li a {
+    padding: 10px;
+  }
+  .navBar nav ul li a:hover {
+    color: #704B3E;
+    background-color: #FFFBFB;
+  }
+  .navBar nav i {
+    display: block;
+  }
 }

@@ -3,34 +3,30 @@
     display: block;
     top: 0;
     width: 100%;
-    background-color: $mainBackground;
+    background-color: $mainTextColor;
     z-index: 10;
 }
 
 .navBar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
     nav {
         position: relative;
         ul {
             display: flex;
             a {
-                padding: 10px 10px;
+                padding: 10px 40px;
+                color: $secondaryTextColor;
             }
         }
         i {
             position: absolute;
             right: 0;
-            top: 0;
+            top: 10px;
             font-size: 1.5rem;
             display: none;
-        }
-    }
-    .navLogo {
-        width: 90px;
-        &:hover {
-            box-shadow: 0 2px $mainTextColor;
+            padding: 10px;
+            background-color: $secondaryBackground;
         }
     }
 }
