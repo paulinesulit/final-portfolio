@@ -9,10 +9,11 @@
 // <i class="fas fa-times"></i>
 
 const hamMenu = document.querySelector(".fa-bars");
-const navMenu = document.querySelector("nav");
+
+const navMenu = document.querySelector("#mainNav");
 
 hamMenu.addEventListener("click", () => {
-  navMenu.classList.toggle(".showMenu");
+  navMenu.classList.toggle("showMenu");
 });
 
 AOS.init();

@@ -1,16 +1,22 @@
 @media (max-width: 600px) {
     .navBarSticky {
-        background-color: rgb(112, 75, 62, 0.9);
+        background-color: rgb(112, 75, 62, 0.95);
     }
     .navBar {
         nav {
             width: 100%;
             text-align: center;
             ul {
+                display: none;
+            }
+            i {
+                display: block;
+            }
+            .showMenu {
                 flex-direction: column;
                 padding: 0;
-                margin-top: 60px;
-                display: none;
+                margin-top: 70px;
+                display: block;
                 li {
                     padding: 20px;
                     a {
@@ -21,9 +27,6 @@
                         }
                     }
                 }
-            }
-            i {
-                display: block;
             }
         }
     } 
