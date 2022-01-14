@@ -550,6 +550,7 @@ footer {
 .skillsContainer ul li {
   width: calc(100% / 5 - 10px);
   text-align: center;
+  padding: 10px;
 }
 .skillsContainer ul li i {
   font-size: 2rem;
