@@ -1,0 +1,56 @@
+.contactContainer {
+    display: flex;
+    justify-content: space-between;
+    .leftContainer {
+        width: 40%;
+        margin-top: 20px;
+        p {
+            margin-top: 20px;
+        }
+        .socialMedia {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            i {
+                font-size: 2rem;
+                padding: 10px;
+                margin: 10px;
+            }
+        }
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin-top: 20px;
+        padding: 50px;
+        input, textarea {
+            margin: 6px;
+            border: 1px solid $mainTextColor;
+            padding: 10px;
+            outline: none;
+            font-family: $bodyFont;
+            font-weight: 300;
+            border-radius: 5px;
+            &::placeholder {
+                font-family: $bodyFont;
+                font-weight: 300;
+            }
+        }
+        button {
+            font-family: $bodyFont;
+            font-weight: 300;
+            padding: 10px;
+            border: none;
+            background-color: $mainTextColor;
+            color: $secondaryTextColor;
+            margin: 6px;
+            border-radius: 5px;
+            &:hover {
+                background-color: $hoverBackground;
+                color: $mainTextColor;
+                transition: background-color 0.3s ease;
+            }
+        }
+    }
+}

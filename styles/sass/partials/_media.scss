@@ -1,6 +1,6 @@
 @media (max-width: 600px) {
     .navBarSticky {
-        background-color: rgb(112, 75, 62, 0.95);
+        background-color: $secondaryBackground;
     }
     .navBar {
         nav {
@@ -23,7 +23,7 @@
                         padding: 10px;
                         &:hover {
                             color: $mainTextColor;
-                            background-color: $secondaryBackground;
+                            background-color: $hoverBackground;
                         }
                     }
                 }

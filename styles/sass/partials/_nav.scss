@@ -3,20 +3,20 @@
     display: block;
     top: 0;
     width: 100%;
-    background-color: $mainTextColor;
+    background-color: $mainBackground;
     z-index: 10;
 }
 
 .navBar {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     nav {
         position: relative;
         ul {
             display: flex;
             a {
-                padding: 10px 40px;
-                color: $secondaryTextColor;
+                padding: 10px 20px;
+                color: $mainTextColor;
             }
         }
         i {

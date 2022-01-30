@@ -283,15 +283,15 @@ p {
 
 html {
   font-size: 125%;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #704B3E;
   background-color: #FFF0ED;
 }
 
 h1 {
-  font-family: "Gochi Hand", cursive;
+  font-family: "Petit Formal Script", cursive;
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 2.8rem;
 }
 
 h2 {
@@ -300,7 +300,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Gochi Hand", cursive;
+  font-family: "Petit Formal Script", cursive;
   font-weight: 700;
   font-size: 1.5rem;
   padding: 10px 0;
@@ -310,9 +310,10 @@ h3 {
 h3::before {
   content: "";
   display: inline-block;
-  width: 110px;
+  width: 150px;
   height: 20px;
   bottom: 10px;
+  left: -10px;
   background-color: rgba(239, 200, 190, 0.7);
   position: absolute;
   z-index: -1;
@@ -322,6 +323,7 @@ a {
   font-weight: 300;
   text-decoration: none;
   color: #704B3E;
+  border-radius: 5px;
 }
 a:hover {
   background-color: rgba(239, 200, 190, 0.7);
@@ -336,6 +338,11 @@ span a {
   padding: 10px 0;
   font-size: 0.9rem;
   line-height: 1.5;
+  font-family: "Lato", sans-serif;
+}
+
+.skillsContainer p {
+  font-weight: 300;
 }
 
 footer p {
@@ -443,7 +450,7 @@ footer {
   display: block;
   top: 0;
   width: 100%;
-  background-color: #704B3E;
+  background-color: #FFF0ED;
   z-index: 10;
 }
 
@@ -451,9 +458,9 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .navBar nav {
   position: relative;
@@ -464,8 +471,8 @@ footer {
   display: flex;
 }
 .navBar nav ul a {
-  padding: 10px 40px;
-  color: #FFFBFB;
+  padding: 10px 20px;
+  color: #704B3E;
 }
 .navBar nav i {
   position: absolute;
@@ -488,7 +495,7 @@ footer {
 .heroImage .heroText {
   position: absolute;
   left: 50%;
-  bottom: 50%;
+  bottom: 65%;
 }
 
 /* about section */
@@ -514,6 +521,7 @@ footer {
   display: inline-block;
   font-size: 0.8rem;
   margin-top: 10px;
+  border-radius: 5px;
 }
 .aboutContainer .resumeButton:hover {
   background-color: rgba(239, 200, 190, 0.7);
@@ -522,12 +530,17 @@ footer {
   transition: background-color 0.3s ease;
 }
 .aboutContainer .aboutImg {
-  width: 100%;
+  width: 35%;
   padding: 40px;
+  margin: 0 auto;
 }
 .aboutContainer .aboutImg img {
-  -webkit-box-shadow: 30px 30px #704B3E;
-          box-shadow: 30px 30px #704B3E;
+  -webkit-box-shadow: 15px 15px #704B3E;
+          box-shadow: 15px 15px #704B3E;
+  border-radius: 5px;
+}
+.aboutContainer .aboutText {
+  width: 65%;
 }
 
 .skillsContainer ul {
@@ -548,13 +561,97 @@ footer {
 .skillsContainer ul li i {
   font-size: 2rem;
 }
-.skillsContainer ul li p {
-  font-family: "Gochi Hand", cursive;
+
+.contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contactContainer .leftContainer {
+  width: 40%;
+  margin-top: 20px;
+}
+.contactContainer .leftContainer p {
+  margin-top: 20px;
+}
+.contactContainer .leftContainer .socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+.contactContainer .leftContainer .socialMedia i {
+  font-size: 2rem;
+  padding: 10px;
+  margin: 10px;
+}
+.contactContainer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+  margin-top: 20px;
+  padding: 50px;
+}
+.contactContainer form input, .contactContainer form textarea {
+  margin: 6px;
+  border: 1px solid #704B3E;
+  padding: 10px;
+  outline: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  border-radius: 5px;
+}
+.contactContainer form input::-webkit-input-placeholder, .contactContainer form textarea::-webkit-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+.contactContainer form input::-moz-placeholder, .contactContainer form textarea::-moz-placeholder {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+.contactContainer form input:-ms-input-placeholder, .contactContainer form textarea:-ms-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+.contactContainer form input::-ms-input-placeholder, .contactContainer form textarea::-ms-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+.contactContainer form input::placeholder, .contactContainer form textarea::placeholder {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+.contactContainer form button {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  padding: 10px;
+  border: none;
+  background-color: #704B3E;
+  color: #FFFBFB;
+  margin: 6px;
+  border-radius: 5px;
+}
+.contactContainer form button:hover {
+  background-color: rgba(239, 200, 190, 0.7);
+  color: #704B3E;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 @media (max-width: 600px) {
   .navBarSticky {
-    background-color: rgba(112, 75, 62, 0.95);
+    background-color: #FFFBFB;
   }
 
   .navBar nav {
@@ -584,6 +681,6 @@ footer {
   }
   .navBar nav .showMenu li a:hover {
     color: #704B3E;
-    background-color: #FFFBFB;
+    background-color: rgba(239, 200, 190, 0.7);
   }
 }

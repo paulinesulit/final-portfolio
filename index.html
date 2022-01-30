@@ -7,9 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pauline Sulit | Web Developer</title>
     <link rel="shortcut icon" href="assets/favicon.ico" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;700&family=Petit+Formal+Script&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
@@ -58,7 +60,7 @@
                     <h3 data-aos="fade-up" data-aos-duration="1000">About Me</h3>
                     <p data-aos="fade-up" data-aos-duration="1000">Hii again!! I'm a front-end developer based in Toronto, Canada who recently graduated from <span><a href="https://junocollege.com/">Juno College of Technology</a></span> with an Honours Bachelor of Arts degree from <span><a href="https://www.utsc.utoronto.ca/home/">University of Toronto</a></span>.</p>
                     <p data-aos="fade-up" data-aos-duration="1000">Prior to coding, I was in business operations for 3+ years, igniting my passion for learning and problem-solving, which led to my interest in creating web applications.</p>
-                    <p data-aos="fade-up" data-aos-duration="1000">When I'm not coding, you'll find me researching where to travel next <em>(post-pandemic ofcourse)</em>, going for walks by the water, drinking a cup of coffee, or trying out new activities <em>(rock-climbing and snowboarding so far!)</em>.</p>
+                    <p data-aos="fade-up" data-aos-duration="1000">When I'm not coding, you'll find me researching where to travel next <em>(post-pandemic ofcourse)</em>, going for walks by the water or drinking a cup of coffee.</p>
                     <a href="" class="resumeButton" data-aos="fade-up" data-aos-duration="1000">MY RESUME</a>
                 </div>
                 <div class="aboutImg" data-aos="zoom-in" data-aos-duration="1000">
@@ -148,8 +150,23 @@
         <div class="borderFour"></div>
 
         <section id="contact" class="contact">
-            <div class="wrapper" data-aos="fade-up" data-aos-duration="1000">
-                <h3>Contact Me</h3>
+            <div class="wrapper contactContainer" data-aos="fade-up" data-aos-duration="1000">
+                <div class="leftContainer">
+                    <h3>Contact Me</h3>
+                    <p>Want to chat? Don't be shy to send me a message or connect with me on social media!</p>
+                    <div class="socialMedia">
+                        <a href="https://www.linkedin.com/in/paulinesulit/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/paulinesulit"><i class="fab fa-github"></i></a>
+                        <a href="https://twitter.com/paulinecodes"><i class="fab fa-twitter"></i></a>
+                        <a href="mailto:pauline.sulit@outlook.com"><i class="fas fa-envelope-open"></i></a>
+                    </div>
+                </div>
+                <form action="https://formspree.io/f/xzboedny" method="POST" name="contact">
+                    <input type="text" required="required" placeholder="name" name="name">
+                    <input type="email" required="required" placeholder="email address" name="_replyto">
+                    <textarea name="message" id="" cols="10" rows="5" required="required" placeholder="message"></textarea>
+                    <button class="submit">send message</button>
+                </form>
             </div>
         </section>
     </main>

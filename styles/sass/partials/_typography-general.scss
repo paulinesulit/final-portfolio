@@ -8,7 +8,7 @@ html {
 h1 {
     font-family: $cursiveFont;
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 2.8rem;
 }
 
 h2 {
@@ -26,9 +26,10 @@ h3 {
     &::before {
         content: '';
         display: inline-block;
-        width: 110px;
+        width: 150px;
         height: 20px;
         bottom: 10px;
+        left: -10px;
         background-color: $hoverBackground;
         position: absolute;
         z-index: -1;
@@ -39,6 +40,7 @@ a {
     font-weight: 300;
     text-decoration: none;
     color: $mainTextColor;
+    border-radius: 5px;
     &:hover {
         background-color: $hoverBackground;
         padding: 0;
@@ -52,6 +54,11 @@ span a {
     padding: 10px 0;
     font-size: 0.9rem;
     line-height: 1.5;
+    font-family: $bodyFont;
+}
+
+.skillsContainer p {
+    font-weight: 300;
 }
 
 footer p {

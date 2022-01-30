@@ -14,6 +14,7 @@
         display: inline-block;
         font-size: 0.8rem;
         margin-top: 10px;
+        border-radius: 5px;
         &:hover {
             background-color: $hoverBackground;
             color: $mainTextColor;
@@ -21,10 +22,15 @@
         }
     }
     .aboutImg {
-        width: 100%;
+        width: 35%;
         padding: 40px;
+        margin: 0 auto;
         img {
-            box-shadow: 30px 30px $mainTextColor;
+            box-shadow: 15px 15px $mainTextColor;
+            border-radius: 5px;
         }
+    }
+    .aboutText {
+        width: 65%;
     }
 }
