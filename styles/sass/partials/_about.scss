@@ -32,5 +32,10 @@
     }
     .aboutText {
         width: 65%;
+        h3 {
+            &:before {
+                width: 153px;
+            }
+        }
     }
 }

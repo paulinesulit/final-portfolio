@@ -1,15 +1,23 @@
 // skills section
 
-.skillsContainer ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    li {
-        width: calc(100% / 5 - 10px);
-        text-align: center;
-        padding: 10px;
-        i {
-            font-size: 2rem;
+.skillsContainer {
+    h3 {
+        &:before {
+            width: 170px;
         }
+    }
+    ul {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+            li {
+                width: calc(100% / 5 - 10px);
+                text-align: center;
+                padding: 20px;
+                i {
+                    font-size: 2rem;
+                }
+            }
     }
 }

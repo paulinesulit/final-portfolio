@@ -4,6 +4,11 @@
     .leftContainer {
         width: 40%;
         margin-top: 20px;
+        h3 {
+            &:before {
+                width: 179px;
+            }
+        }
         p {
             margin-top: 20px;
         }

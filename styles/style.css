@@ -286,10 +286,11 @@ html {
   font-family: "Lato", sans-serif;
   color: #704B3E;
   background-color: #FFF0ED;
+  scroll-behavior: smooth;
 }
 
 h1 {
-  font-family: "Petit Formal Script", cursive;
+  font-family: "Playfair Display", serif;
   font-weight: 700;
   font-size: 2.8rem;
 }
@@ -301,7 +302,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Petit Formal Script", cursive;
+  font-family: "Playfair Display", serif;
   font-size: 1.5rem;
   padding: 10px 0;
   position: relative;
@@ -320,7 +321,7 @@ h3::before {
 }
 
 h4 {
-  font-family: "Petit Formal Script", cursive;
+  font-family: "Playfair Display", serif;
   font-size: 1.2rem;
   padding: 15px 0;
   -webkit-text-decoration: underline 5px rgba(239, 200, 190, 0.7);
@@ -338,6 +339,12 @@ a:hover {
   padding: 0;
   -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
+}
+
+em, .textProject p:nth-of-type(2) {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 0.8rem;
 }
 
 p,
@@ -484,8 +491,8 @@ footer {
   color: #efc8be;
 }
 .navBar h1 {
-  letter-spacing: -10px;
-  font-size: 2.5rem;
+  letter-spacing: -5px;
+  font-size: 2.2rem;
 }
 .navBar nav {
   position: relative;
@@ -509,6 +516,43 @@ footer {
   background-color: #FFFBFB;
 }
 
+@media (max-width: 600px) {
+  .navBarSticky {
+    background-color: #FFFBFB;
+  }
+  .navBarSticky .navBar .logo {
+    display: none;
+  }
+  .navBarSticky .navBar nav {
+    width: 100%;
+    text-align: center;
+  }
+  .navBarSticky .navBar nav ul {
+    display: none;
+  }
+  .navBarSticky .navBar nav i {
+    display: block;
+  }
+  .navBarSticky .navBar nav .showMenu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+    margin-top: 70px;
+    display: block;
+  }
+  .navBarSticky .navBar nav .showMenu li {
+    padding: 20px;
+  }
+  .navBarSticky .navBar nav .showMenu li a {
+    padding: 10px;
+  }
+  .navBarSticky .navBar nav .showMenu li a:hover {
+    color: #704B3E;
+    background-color: rgba(239, 200, 190, 0.7);
+  }
+}
 .heroImage {
   background-image: url("../assets/procreate.png");
   background-size: 600px;
@@ -520,7 +564,7 @@ footer {
 .heroImage .heroText {
   position: absolute;
   left: 50%;
-  bottom: 65%;
+  bottom: 55%;
 }
 
 /* about section */
@@ -567,8 +611,15 @@ footer {
 .aboutContainer .aboutText {
   width: 65%;
 }
+.aboutContainer .aboutText h3:before {
+  width: 153px;
+}
 
+.skillsContainer h3:before {
+  width: 170px;
+}
 .skillsContainer ul {
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -581,10 +632,14 @@ footer {
 .skillsContainer ul li {
   width: calc(100% / 5 - 10px);
   text-align: center;
-  padding: 10px;
+  padding: 20px;
 }
 .skillsContainer ul li i {
   font-size: 2rem;
+}
+
+.portfolio h3:before {
+  width: 181px;
 }
 
 .projects .eachProject {
@@ -600,6 +655,9 @@ footer {
 }
 .projects .eachProject .imgProject {
   width: calc(100% / 2 - 20px);
+}
+.projects .eachProject .imgProject:nth-of-type(2) {
+  padding-top: 25px;
 }
 .projects .eachProject .textProject {
   width: calc(100% / 2 - 20px);
@@ -641,6 +699,9 @@ footer {
 .contactContainer .leftContainer {
   width: 40%;
   margin-top: 20px;
+}
+.contactContainer .leftContainer h3:before {
+  width: 179px;
 }
 .contactContainer .leftContainer p {
   margin-top: 20px;
@@ -717,40 +778,123 @@ footer {
   transition: background-color 0.3s ease;
 }
 
-@media (max-width: 600px) {
-  .navBarSticky {
-    background-color: #FFFBFB;
+@media (max-width: 1030px) {
+  .skillsContainer h3 {
+    margin-bottom: 10px;
   }
-  .navBarSticky .navBar .logo {
-    display: none;
+  .skillsContainer ul li {
+    width: calc(100% / 4);
+    padding: 10px;
   }
-  .navBarSticky .navBar nav {
+}
+@media (max-width: 925px) {
+  .heroImage {
+    background-size: 400px;
+    height: 400px;
+  }
+  .heroImage .heroText {
+    left: 40%;
+  }
+
+  .aboutContainer .aboutImg {
+    width: 50%;
+  }
+  .aboutContainer .aboutText {
+    width: 50%;
+  }
+}
+@media (max-width: 790px) {
+  .heroImage .heroText {
+    left: 50%;
+  }
+  .heroImage .heroText h1 {
+    font-size: 2rem;
+  }
+  .heroImage .heroText h2 {
+    font-size: 1.2rem;
+  }
+
+  .aboutContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .aboutContainer .aboutText {
     width: 100%;
-    text-align: center;
   }
-  .navBarSticky .navBar nav ul {
-    display: none;
+  .aboutContainer .aboutImg {
+    width: 60%;
   }
-  .navBarSticky .navBar nav i {
-    display: block;
+
+  .portfolio {
+    padding-bottom: 1px;
   }
-  .navBarSticky .navBar nav .showMenu {
+
+  .projects .eachProject {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .projects .eachProject .imgProject, .projects .eachProject .textProject {
+    width: 80%;
+  }
+  .projects .eachProject:nth-of-type(2) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .contactContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactContainer p {
+    text-align: center;
     padding: 0;
-    margin-top: 70px;
-    display: block;
   }
-  .navBarSticky .navBar nav .showMenu li {
-    padding: 20px;
+  .contactContainer .leftContainer .socialMedia {
+    margin: 0;
   }
-  .navBarSticky .navBar nav .showMenu li a {
+  .contactContainer .leftContainer, .contactContainer form {
+    width: 100%;
+  }
+  .contactContainer form {
     padding: 10px;
+    margin-top: 0;
   }
-  .navBarSticky .navBar nav .showMenu li a:hover {
-    color: #704B3E;
-    background-color: rgba(239, 200, 190, 0.7);
+}
+@media (max-width: 630px) {
+  .heroImage .heroText {
+    left: 60%;
+    padding-right: 10px;
+  }
+
+  .aboutContainer .aboutImg {
+    width: 80%;
+  }
+}
+@media (max-width: 540px) {
+  .heroImage {
+    background-size: 320px;
+    height: 320px;
+  }
+  .heroImage .heroText {
+    bottom: 102%;
+    left: 9%;
+  }
+
+  .skillsContainer ul li {
+    width: calc(100% / 3);
+  }
+}
+@media (max-width: 460px) {
+  .aboutContainer .aboutImg {
+    width: 90%;
   }
 }

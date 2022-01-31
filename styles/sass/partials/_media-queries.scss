@@ -1,0 +1,120 @@
+@media (max-width: 1030px) {
+    .skillsContainer {
+        h3 {
+            margin-bottom: 10px;
+        }
+        ul {
+            li {
+                width: calc(100% / 4);
+                padding: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 925px) {
+    .heroImage {
+        background-size: 400px;
+        height: 400px;
+        .heroText {
+            left: 40%;
+        }
+    }
+    .aboutContainer {
+        .aboutImg {
+            width: 50%;
+        }
+        .aboutText {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width:790px) {
+    .heroImage .heroText {
+        left: 50%;
+        h1 {
+            font-size: 2rem;
+        }
+        h2 {
+            font-size: 1.2rem;
+        }
+    }
+    .aboutContainer {
+        flex-direction: column-reverse;
+        .aboutText {
+            width: 100%;
+        }
+        .aboutImg {
+            width: 60%;
+        }
+    }
+    .portfolio {
+        padding-bottom: 1px;
+    }
+    .projects {
+        .eachProject {
+            flex-direction: column;
+            margin-bottom: 50px;
+            .imgProject, .textProject {
+                width: 80%;
+            }
+        }
+        .eachProject:nth-of-type(2) {
+            flex-direction: column-reverse;
+        }
+    }
+    .contactContainer {
+        flex-direction: column;
+        p {
+            text-align: center;
+            padding: 0;
+        }
+        .leftContainer .socialMedia {
+            margin: 0;
+        }
+        .leftContainer, form {
+            width: 100%;
+        }
+        form {
+            padding: 10px;
+            margin-top: 0;
+        }
+    }
+}
+
+@media (max-width:630px) {
+    .heroImage .heroText {
+        left: 60%;
+        padding-right: 10px;
+    }
+    .aboutContainer {
+        .aboutImg {
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width:540px) {
+    .heroImage {
+        background-size: 320px;
+        height: 320px;
+        .heroText {
+            bottom: 102%;
+            left: 9%;
+        }
+    } 
+    .skillsContainer ul {
+        li {
+            width: calc(100% / 3);
+        }
+    }
+}
+
+@media (max-width:460px) {
+    .aboutContainer {
+        .aboutImg {
+            width: 90%;
+        }
+    }
+}

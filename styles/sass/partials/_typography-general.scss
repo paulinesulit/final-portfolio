@@ -3,10 +3,11 @@ html {
     font-family: $bodyFont;
     color: $mainTextColor;
     background-color: $mainBackground;
+    scroll-behavior: smooth;
 }
 
 h1 {
-    font-family: $cursiveFont;
+    font-family: $headingFont;
     font-weight: 700;
     font-size: 2.8rem;
 }
@@ -18,7 +19,7 @@ h2 {
 }
 
 h3 {
-    font-family: $cursiveFont;
+    font-family: $headingFont;
     font-size: 1.5rem;
     padding: 10px 0;
     position: relative;
@@ -37,7 +38,7 @@ h3 {
 }
 
 h4 {
-    font-family: $cursiveFont;
+    font-family: $headingFont;
     font-size: 1.2rem;
     padding: 15px 0;
     text-decoration: underline 5px $hoverBackground;
@@ -53,6 +54,12 @@ a {
         padding: 0;
         transition: background-color 0.3s ease;
     }
+}
+
+em, .textProject p:nth-of-type(2) {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 0.8rem;
 }
 
 p,
