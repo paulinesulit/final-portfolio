@@ -1,33 +1,36 @@
 @media (max-width: 600px) {
     .navBarSticky {
         background-color: $secondaryBackground;
-    }
-    .navBar {
-        nav {
-            width: 100%;
-            text-align: center;
-            ul {
+        .navBar {
+            .logo {
                 display: none;
             }
-            i {
-                display: block;
-            }
-            .showMenu {
-                flex-direction: column;
-                padding: 0;
-                margin-top: 70px;
-                display: block;
-                li {
-                    padding: 20px;
-                    a {
-                        padding: 10px;
-                        &:hover {
-                            color: $mainTextColor;
-                            background-color: $hoverBackground;
+            nav {
+                width: 100%;
+                text-align: center;
+                ul {
+                    display: none;
+                }
+                i {
+                    display: block;
+                }
+                .showMenu {
+                    flex-direction: column;
+                    padding: 0;
+                    margin-top: 70px;
+                    display: block;
+                    li {
+                        padding: 20px;
+                        a {
+                            padding: 10px;
+                            &:hover {
+                                color: $mainTextColor;
+                                background-color: $hoverBackground;
+                            }
                         }
                     }
                 }
             }
-        }
-    } 
+        } 
+    }
 }

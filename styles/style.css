@@ -297,6 +297,7 @@ h1 {
 h2 {
   font-weight: 300;
   font-size: 1.5rem;
+  padding: 10px 0;
 }
 
 h3 {
@@ -321,7 +322,7 @@ h3::before {
 h4 {
   font-family: "Petit Formal Script", cursive;
   font-size: 1.2rem;
-  padding: 5px 0;
+  padding: 15px 0;
   -webkit-text-decoration: underline 5px rgba(239, 200, 190, 0.7);
           text-decoration: underline 5px rgba(239, 200, 190, 0.7);
 }
@@ -468,6 +469,23 @@ footer {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.navBar .logo {
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+.navBar .logo:hover {
+  background-color: transparent;
+  color: #efc8be;
+}
+.navBar h1 {
+  letter-spacing: -10px;
+  font-size: 2.5rem;
 }
 .navBar nav {
   position: relative;
@@ -586,6 +604,9 @@ footer {
 .projects .eachProject .textProject {
   width: calc(100% / 2 - 20px);
 }
+.projects .eachProject .textProject p {
+  padding: 5px 0;
+}
 .projects .eachProject .textProject .usedTech {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -700,18 +721,20 @@ footer {
   .navBarSticky {
     background-color: #FFFBFB;
   }
-
-  .navBar nav {
+  .navBarSticky .navBar .logo {
+    display: none;
+  }
+  .navBarSticky .navBar nav {
     width: 100%;
     text-align: center;
   }
-  .navBar nav ul {
+  .navBarSticky .navBar nav ul {
     display: none;
   }
-  .navBar nav i {
+  .navBarSticky .navBar nav i {
     display: block;
   }
-  .navBar nav .showMenu {
+  .navBarSticky .navBar nav .showMenu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -720,13 +743,13 @@ footer {
     margin-top: 70px;
     display: block;
   }
-  .navBar nav .showMenu li {
+  .navBarSticky .navBar nav .showMenu li {
     padding: 20px;
   }
-  .navBar nav .showMenu li a {
+  .navBarSticky .navBar nav .showMenu li a {
     padding: 10px;
   }
-  .navBar nav .showMenu li a:hover {
+  .navBarSticky .navBar nav .showMenu li a:hover {
     color: #704B3E;
     background-color: rgba(239, 200, 190, 0.7);
   }
