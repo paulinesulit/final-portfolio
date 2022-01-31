@@ -301,7 +301,6 @@ h2 {
 
 h3 {
   font-family: "Petit Formal Script", cursive;
-  font-weight: 700;
   font-size: 1.5rem;
   padding: 10px 0;
   position: relative;
@@ -310,13 +309,21 @@ h3 {
 h3::before {
   content: "";
   display: inline-block;
-  width: 150px;
+  width: 160px;
   height: 20px;
   bottom: 10px;
   left: -10px;
   background-color: rgba(239, 200, 190, 0.7);
   position: absolute;
   z-index: -1;
+}
+
+h4 {
+  font-family: "Petit Formal Script", cursive;
+  font-size: 1.2rem;
+  padding: 5px 0;
+  -webkit-text-decoration: underline 5px rgba(239, 200, 190, 0.7);
+          text-decoration: underline 5px rgba(239, 200, 190, 0.7);
 }
 
 a {
@@ -560,6 +567,46 @@ footer {
 }
 .skillsContainer ul li i {
   font-size: 2rem;
+}
+
+.projects .eachProject {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.projects .eachProject .imgProject {
+  width: calc(100% / 2 - 20px);
+}
+.projects .eachProject .textProject {
+  width: calc(100% / 2 - 20px);
+}
+.projects .eachProject .textProject .usedTech {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 0;
+}
+.projects .eachProject .textProject .usedTech i {
+  padding: 10px;
+  font-size: 1.5rem;
+}
+.projects .eachProject .textProject .projectSites {
+  margin: 10px 0;
+}
+.projects .eachProject .textProject .projectSites a {
+  padding: 10px;
+  background-color: rgba(239, 200, 190, 0.7);
+  font-size: 0.8rem;
+}
+.projects .eachProject .textProject .projectSites a:hover {
+  background-color: #704B3E;
+  color: #FFFBFB;
 }
 
 .contactContainer {
