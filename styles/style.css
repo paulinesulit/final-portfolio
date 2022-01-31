@@ -516,6 +516,14 @@ footer {
   background-color: #FFFBFB;
 }
 
+footer i {
+  position: fixed;
+  font-size: 1.6rem;
+  bottom: 20px;
+  right: 20px;
+  color: #efc8be;
+}
+
 @media (max-width: 600px) {
   .navBarSticky {
     background-color: #FFFBFB;
