@@ -2,7 +2,8 @@
 
 @media (max-width: 600px) {
     .navBarSticky {
-        background-color: $secondaryBackground;
+        background-color: transparent;
+        background-image: linear-gradient(to right bottom, rgba(238, 223, 220, 0.98), rgb(255, 251, 251, .98));
         .navBar {
             .logo {
                 display: none;
@@ -13,10 +14,8 @@
                 ul {
                     display: none;
                 }
-                i {
-                    display: block;
-                }
                 .showMenu {
+                    animation: slide-in 800ms;
                     flex-direction: column;
                     padding: 0;
                     margin-top: 70px;
@@ -34,5 +33,89 @@
                 }
             }
         } 
+    }
+
+    @keyframes slide-in {
+        from {
+            transform: translateX(100%);
+        }
+        to {
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes fade-out {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+
+    // HAMBURGER MENU
+
+    .menuPosition {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+    }
+    .menuBtn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        transition: all .5s ease-in-out;
+        background-color: $secondaryBackground;
+    }
+    .menuBurger {
+        width: 40px;
+        height: 6px;
+        background-color: $mainTextColor;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+        transition: all .5s ease-in-out;
+        &:before, &:after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 6px;
+            background-color: $mainTextColor;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+            transition: all .5s ease-in-out;
+        }
+        &:before {
+            transform: translateY(-13px);
+        }
+        &:after {
+            transform: translateY(13px);
+        }
+    }
+
+    .menuBtn.open .menuBurger {
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .menuBtn.open .menuBurger:before {
+        transform: rotate(45deg) translate(35px, -35px);
+    }
+    .menuBtn.open .menuBurger:after {
+        transform: rotate(-45deg) translate(35px, 35px);
+    }
+
+    @keyframes slideIn {
+        0% {
+            width: 0%;
+            opacity: 0;
+        }
+        100% {
+            width: 100%;
+            opacity: 1;
+        }
     }
 }

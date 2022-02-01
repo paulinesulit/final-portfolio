@@ -506,15 +506,6 @@ footer {
   padding: 10px 20px;
   color: #704B3E;
 }
-.navBar nav i {
-  position: absolute;
-  right: 0;
-  top: 10px;
-  font-size: 2rem;
-  display: none;
-  padding: 10px;
-  background-color: #FFFBFB;
-}
 
 footer i {
   position: fixed;
@@ -526,7 +517,9 @@ footer i {
 
 @media (max-width: 600px) {
   .navBarSticky {
-    background-color: #FFFBFB;
+    background-color: transparent;
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(238, 223, 220, 0.98)), to(rgba(255, 251, 251, 0.98)));
+    background-image: linear-gradient(to right bottom, rgba(238, 223, 220, 0.98), rgba(255, 251, 251, 0.98));
   }
   .navBarSticky .navBar .logo {
     display: none;
@@ -538,10 +531,9 @@ footer i {
   .navBarSticky .navBar nav ul {
     display: none;
   }
-  .navBarSticky .navBar nav i {
-    display: block;
-  }
   .navBarSticky .navBar nav .showMenu {
+    -webkit-animation: slide-in 800ms;
+            animation: slide-in 800ms;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -559,6 +551,138 @@ footer i {
   .navBarSticky .navBar nav .showMenu li a:hover {
     color: #704B3E;
     background-color: rgba(239, 200, 190, 0.7);
+  }
+
+  @-webkit-keyframes slide-in {
+    from {
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+    }
+    to {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+    }
+  }
+
+  @keyframes slide-in {
+    from {
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+    }
+    to {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+    }
+  }
+  @-webkit-keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  .menuPosition {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+  }
+
+  .menuBtn {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 60px;
+    height: 60px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    background-color: #FFFBFB;
+  }
+
+  .menuBurger {
+    width: 40px;
+    height: 6px;
+    background-color: #704B3E;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+            box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  .menuBurger:before, .menuBurger:after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 6px;
+    background-color: #704B3E;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+            box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  .menuBurger:before {
+    -webkit-transform: translateY(-13px);
+            transform: translateY(-13px);
+  }
+  .menuBurger:after {
+    -webkit-transform: translateY(13px);
+            transform: translateY(13px);
+  }
+
+  .menuBtn.open .menuBurger {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    background: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
+  .menuBtn.open .menuBurger:before {
+    -webkit-transform: rotate(45deg) translate(35px, -35px);
+            transform: rotate(45deg) translate(35px, -35px);
+  }
+
+  .menuBtn.open .menuBurger:after {
+    -webkit-transform: rotate(-45deg) translate(35px, 35px);
+            transform: rotate(-45deg) translate(35px, 35px);
+  }
+
+  @-webkit-keyframes slideIn {
+    0% {
+      width: 0%;
+      opacity: 0;
+    }
+    100% {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideIn {
+    0% {
+      width: 0%;
+      opacity: 0;
+    }
+    100% {
+      width: 100%;
+      opacity: 1;
+    }
   }
 }
 .heroImage {
