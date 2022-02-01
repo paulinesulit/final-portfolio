@@ -643,28 +643,6 @@ footer i {
     -webkit-transform: rotate(-45deg) translate(35px, 35px);
             transform: rotate(-45deg) translate(35px, 35px);
   }
-
-  @-webkit-keyframes slideIn {
-    0% {
-      width: 0%;
-      opacity: 0;
-    }
-    100% {
-      width: 100%;
-      opacity: 1;
-    }
-  }
-
-  @keyframes slideIn {
-    0% {
-      width: 0%;
-      opacity: 0;
-    }
-    100% {
-      width: 100%;
-      opacity: 1;
-    }
-  }
 }
 .heroImage {
   background-image: url("../assets/procreate.png");
