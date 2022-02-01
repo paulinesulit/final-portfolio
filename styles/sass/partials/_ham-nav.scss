@@ -16,6 +16,7 @@
                 }
                 .showMenu {
                     animation: slide-in 800ms;
+                    -webkit-animation: slide-in 800ms;
                     flex-direction: column;
                     padding: 0;
                     margin-top: 70px;
@@ -44,12 +45,12 @@
         }
     }
 
-    @keyframes fade-out {
+    @-webkit-keyframes slide-in {
         from {
-            opacity: 1;
+            transform: translateX(100%);
         }
         to {
-            opacity: 0;
+            transform: translateX(0%);
         }
     }
 

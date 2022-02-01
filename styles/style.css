@@ -532,8 +532,8 @@ footer i {
     display: none;
   }
   .navBarSticky .navBar nav .showMenu {
+    animation: slide-in 800ms;
     -webkit-animation: slide-in 800ms;
-            animation: slide-in 800ms;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -553,17 +553,6 @@ footer i {
     background-color: rgba(239, 200, 190, 0.7);
   }
 
-  @-webkit-keyframes slide-in {
-    from {
-      -webkit-transform: translateX(100%);
-              transform: translateX(100%);
-    }
-    to {
-      -webkit-transform: translateX(0%);
-              transform: translateX(0%);
-    }
-  }
-
   @keyframes slide-in {
     from {
       -webkit-transform: translateX(100%);
@@ -574,20 +563,14 @@ footer i {
               transform: translateX(0%);
     }
   }
-  @-webkit-keyframes fade-out {
+  @-webkit-keyframes slide-in {
     from {
-      opacity: 1;
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
     }
     to {
-      opacity: 0;
-    }
-  }
-  @keyframes fade-out {
-    from {
-      opacity: 1;
-    }
-    to {
-      opacity: 0;
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
     }
   }
   .menuPosition {
