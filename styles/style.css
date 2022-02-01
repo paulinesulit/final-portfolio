@@ -518,8 +518,10 @@ footer i {
 @media (max-width: 600px) {
   .navBarSticky {
     background-color: transparent;
-    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(238, 223, 220, 0.98)), to(rgba(255, 251, 251, 0.98)));
-    background-image: linear-gradient(to right bottom, rgba(238, 223, 220, 0.98), rgba(255, 251, 251, 0.98));
+  }
+  .navBarSticky .navBar {
+    margin: 0;
+    width: 100%;
   }
   .navBarSticky .navBar .logo {
     display: none;
@@ -527,50 +529,34 @@ footer i {
   .navBarSticky .navBar nav {
     width: 100%;
     text-align: center;
+    right: -1000px;
+    -webkit-transition: all 0.7s cubic-bezier(0.01, 0.55, 0.73, 0.96);
+    transition: all 0.7s cubic-bezier(0.01, 0.55, 0.73, 0.96);
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(238, 223, 220, 0.98)), to(rgba(255, 251, 251, 0.98)));
+    background-image: linear-gradient(to right bottom, rgba(238, 223, 220, 0.98), rgba(255, 251, 251, 0.98));
   }
   .navBarSticky .navBar nav ul {
-    display: none;
-  }
-  .navBarSticky .navBar nav .showMenu {
-    animation: slide-in 800ms;
-    -webkit-animation: slide-in 800ms;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 0;
     margin-top: 70px;
-    display: block;
   }
-  .navBarSticky .navBar nav .showMenu li {
+  .navBarSticky .navBar nav ul li {
     padding: 20px;
   }
-  .navBarSticky .navBar nav .showMenu li a {
+  .navBarSticky .navBar nav ul li a {
     padding: 10px;
   }
-  .navBarSticky .navBar nav .showMenu li a:hover {
+  .navBarSticky .navBar nav ul li a:hover {
     color: #704B3E;
     background-color: rgba(239, 200, 190, 0.7);
   }
+  .navBarSticky .navBar .showMenu {
+    right: 0;
+  }
 
-  @keyframes slide-in {
-    from {
-      -webkit-transform: translateX(100%);
-              transform: translateX(100%);
-    }
-    to {
-      -webkit-transform: translateX(0%);
-              transform: translateX(0%);
-    }
-  }
-  @-webkit-keyframes slide-in {
-    from {
-      -webkit-transform: translateX(100%);
-    }
-    to {
-      -webkit-transform: translateX(0%);
-    }
-  }
   .menuPosition {
     position: absolute;
     right: 5px;

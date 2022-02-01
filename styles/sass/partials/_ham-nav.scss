@@ -3,24 +3,22 @@
 @media (max-width: 600px) {
     .navBarSticky {
         background-color: transparent;
-        background-image: linear-gradient(to right bottom, rgba(238, 223, 220, 0.98), rgb(255, 251, 251, .98));
         .navBar {
+            margin: 0;
+            width: 100%;
             .logo {
                 display: none;
             }
             nav {
                 width: 100%;
                 text-align: center;
+                right: -1000px;
+                transition: all 0.7s cubic-bezier(.01,.55,.73,.96);
+                background-image: linear-gradient(to right bottom, rgba(238, 223, 220, 0.98), rgb(255, 251, 251, .98));
                 ul {
-                    display: none;
-                }
-                .showMenu {
-                    animation: slide-in 800ms;
-                    -webkit-animation: slide-in 800ms;
                     flex-direction: column;
                     padding: 0;
                     margin-top: 70px;
-                    display: block;
                     li {
                         padding: 20px;
                         a {
@@ -33,25 +31,10 @@
                     }
                 }
             }
+            .showMenu {
+                right: 0;
+            }
         } 
-    }
-
-    @keyframes slide-in {
-        from {
-            transform: translateX(100%);
-        }
-        to {
-            transform: translateX(0%);
-        }
-    }
-
-    @-webkit-keyframes slide-in {
-        from {
-            -webkit-transform: translateX(100%);
-        }
-        to {
-            -webkit-transform: translateX(0%);
-        }
     }
 
     // HAMBURGER MENU
