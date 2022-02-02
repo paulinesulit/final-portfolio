@@ -1,10 +1,10 @@
-.portfolio h3 {
+.projects h3 {
     &:before {
         width: 181px;
     }
 }
 
-.projects {
+.projectsContainer {
     .eachProject {
         display: flex;
         justify-content: space-between;
@@ -22,14 +22,14 @@
             }
             .usedTech {
                 display: flex;
-                margin: 10px 0;
+                margin: 5px 0 10px 0;
                 i {
-                    padding: 10px;
+                    padding: 5px;
                     font-size: 1.5rem;
                 }
             }
             .projectSites {
-                margin: 10px 0;
+                margin: 20px 0;
                 a {
                     padding: 10px;
                     background-color: $hoverBackground;
