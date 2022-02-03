@@ -785,13 +785,13 @@ footer i {
 .contactContainer .leftContainer p {
   margin-top: 20px;
 }
+.contactContainer .leftContainer p a {
+  font-weight: 400;
+}
 .contactContainer .leftContainer .socialMedia {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-top: 20px;
 }
 .contactContainer .leftContainer .socialMedia i {
@@ -938,6 +938,9 @@ footer i {
   }
   .contactContainer .leftContainer .socialMedia {
     margin: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .contactContainer .leftContainer, .contactContainer form {
     width: 100%;
