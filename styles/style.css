@@ -495,7 +495,7 @@ footer {
   font-size: 2.2rem;
 }
 .navBar nav {
-  position: relative;
+  position: absolute;
 }
 .navBar nav ul {
   display: -webkit-box;
@@ -521,7 +521,6 @@ footer i {
   }
   .navBarSticky .navBar {
     margin: 0;
-    width: 100%;
   }
   .navBarSticky .navBar .logo {
     display: none;
@@ -556,6 +555,8 @@ footer i {
     background-color: rgba(239, 200, 190, 0.7);
   }
   .navBarSticky .navBar .showMenu {
+    left: 0;
+    top: 0;
     right: 0;
   }
 
