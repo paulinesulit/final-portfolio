@@ -347,17 +347,26 @@ em, .textProject p:nth-of-type(2) {
   font-size: 0.8rem;
 }
 
+.textProject p:nth-of-type(2) a {
+  text-decoration: underline;
+}
+
 p,
 span a {
   font-weight: 400;
   padding: 10px 0;
   font-size: 0.9rem;
-  line-height: 1.5;
+  line-height: 1.6;
   font-family: "Lato", sans-serif;
+}
+
+span a {
+  text-decoration: underline;
 }
 
 .skillsContainer p {
   font-weight: 300;
+  font-size: 0.8rem;
 }
 
 footer p {
@@ -718,7 +727,7 @@ footer i {
   padding: 20px;
 }
 .skillsContainer ul li i {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .projects h3:before {
@@ -791,6 +800,7 @@ footer i {
 }
 .contactContainer .leftContainer p a {
   font-weight: 400;
+  text-decoration: underline;
 }
 .contactContainer .leftContainer .socialMedia {
   display: -webkit-box;
@@ -818,7 +828,7 @@ footer i {
 .contactContainer form input, .contactContainer form textarea {
   margin: 6px;
   border: 1px solid #704B3E;
-  padding: 10px;
+  padding: 12px;
   outline: none;
   font-family: "Lato", sans-serif;
   font-weight: 300;

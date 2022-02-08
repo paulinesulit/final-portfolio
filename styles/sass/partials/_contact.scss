@@ -13,6 +13,7 @@
             margin-top: 20px;
             a {
                 font-weight: 400;
+                text-decoration: underline;
             }
         }
         .socialMedia {
@@ -34,7 +35,7 @@
         input, textarea {
             margin: 6px;
             border: 1px solid $mainTextColor;
-            padding: 10px;
+            padding: 12px;
             outline: none;
             font-family: $bodyFont;
             font-weight: 300;
