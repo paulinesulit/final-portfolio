@@ -392,6 +392,10 @@ ul {
   list-style-type: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 header {
   background-color: #FFF0ED;
   height: 100%;
@@ -901,10 +905,10 @@ footer i {
     left: 50%;
   }
   .heroImage .heroText h1 {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
   .heroImage .heroText h2 {
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
 
   .aboutContainer {
