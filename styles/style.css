@@ -700,8 +700,8 @@ footer i {
   margin: 0 auto;
 }
 .aboutContainer .aboutImg img {
-  -webkit-box-shadow: 15px 15px #704B3E;
-          box-shadow: 15px 15px #704B3E;
+  -webkit-box-shadow: 15px 15px #efc8be;
+          box-shadow: 15px 15px #efc8be;
   border-radius: 5px;
 }
 .aboutContainer .aboutText {
