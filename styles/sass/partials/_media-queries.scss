@@ -28,6 +28,10 @@
             width: 50%;
         }
     }
+    .travelPhotos ul li {
+        width: calc(100% / 2 - 10px);
+        margin: 5px;
+    }
 }
 
 @media (max-width:790px) {
@@ -106,6 +110,10 @@
         li {
             width: calc(100% / 3);
         }
+    }
+    .travelPhotos ul li {
+        width: 100%;
+        margin: 5px;
     }
 }
 
