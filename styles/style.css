@@ -696,7 +696,7 @@ footer i {
   transition: background-color 0.3s ease;
 }
 .aboutContainer .aboutImg {
-  width: 35%;
+  width: 30%;
   padding: 40px;
   margin: 0 auto;
 }
@@ -706,7 +706,7 @@ footer i {
   border-radius: 5px;
 }
 .aboutContainer .aboutText {
-  width: 65%;
+  width: 75%;
 }
 .aboutContainer .aboutText h3:before {
   width: 153px;
