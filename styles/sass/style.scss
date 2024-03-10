@@ -1,13 +1,11 @@
-@import "partials/setup";
-@import "partials/variables";
-@import "partials/typography-general";
-@import "partials/background-borders";
-@import "partials/nav";
-@import "partials/ham-nav";
-@import "partials/hero";
-@import "partials/about";
-@import "partials/skills";
-@import "partials/projects";
-@import "partials/contact";
-@import "partials/travel";
-@import "partials/media-queries";
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2.8rem;
+    text-align: center;
+    color: #704B3E;
+}
+
+body {
+    background-color: #FFF0ED;;
+}
